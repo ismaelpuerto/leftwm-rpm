@@ -4,7 +4,7 @@
 %global debug_package %{nil}
 
 Name:           leftwm
-Version:        0.5.3
+Version:        0.5.4
 Release:        1%{?dist}
 Summary:        A tiling window manager for Adventurers
 
@@ -12,10 +12,10 @@ License:        MIT
 URL:            http://leftwm.org/
 Source0:        https://github.com/leftwm/leftwm/archive/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:  cargo >= 1.70
+BuildRequires:  cargo >= 1.83
 BuildRequires:  gcc
 BuildRequires:  make
-BuildRequires:  rust >= 1.70
+BuildRequires:  rust >= 1.83
 
 Recommends:     dmenu
 
@@ -80,7 +80,9 @@ strip --strip-all %{buildroot}%{_bindir}/*
 
 
 %changelog
-* Tue Nov 5 2024 Ismael Puertop <ipuertofreire@gmail.com> - 0.5.3-1
+* Sat Feb 8 2025 Ismael Puerto <ipuertofreire@gmail.com> - 0.5.4-1
+- Bump version to 0.5.4
+* Tue Nov 5 2024 Ismael Puerto <ipuertofreire@gmail.com> - 0.5.3-1
 - Bump version to 0.5.3
 * Tue Dec 27 2022 TH3 S4LM0N <TH3-S4LM0N@outlook.com> - 0.4.1-1
 - Bump version to 0.4.1
